@@ -1,6 +1,6 @@
 # SwimlaneUI
 
-SwimlaneUI is a project management tool that allows users to organize tasks into different swimlanes (To Do, In Progress, Done). Each task is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing tasks efficiently.It has drag-and-drop functionality to move tasks between swimlanes.
+SwimlaneUI is a project management tool that allows users to organize blocks into different swimlanes (To Do, In Progress, Done). Each block is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing blocks efficiently.It has drag-and-drop functionality to move blocks between swimlanes.
 
 - ## Live Demo
 
@@ -12,16 +12,16 @@ SwimlaneUI is a project management tool that allows users to organize tasks into
 
 ## Features
 
-- **Create New Tasks:** Add a new task to one of the swimlanes (To Do, In Progress, Done) by clicking the "Create A Block" button.
-- **Edit Tasks:** Modify task details by clicking the "Edit" button within each task card.
-- **Delete Tasks:** Remove a task by clicking the "Delete" button within each task card.
-- **Filter Tasks:** Search for tasks by title using the filter input above the swimlanes.
-- **Timestamp:** Each task shows when it was created and last updated.
-- **Swimlanes:** Tasks are visually separated into three distinct columns:
-  - **To Do**: For tasks that are yet to be started.
-  - **In Progress**: For tasks currently being worked on.
-  - **Done**: For completed tasks.
-- **drag-and-drop:** It has drag-and-drop functionality to move tasks between swimlanes.
+- **Create New Blocks:** Add a new block to one of the swimlanes (To Do, In Progress, Done) by clicking the "Create A Block" button.
+- **Edit Blocks:** Modify block details by clicking the "Edit" button within each block card.
+- **Delete Blocks:** Remove a block by clicking the "Delete" button within each block card.
+- **Filter Blocks:** Search for blocks by title using the filter input above the swimlanes.
+- **Timestamp:** Each block shows when it was created and last updated.
+- **Swimlanes:** blocks are visually separated into three distinct columns:
+  - **To Do**: For blocks that are yet to be started.
+  - **In Progress**: For blocks currently being worked on.
+  - **Done**: For completed blocks.
+- **drag-and-drop:** It has drag-and-drop functionality to move blocks between swimlanes.
 ---
 
 
@@ -59,15 +59,15 @@ SwimlaneUI is a project management tool that allows users to organize tasks into
 
 ## How to Use
 
-1. Click on the **Create A Block** button to create a new task.
-2. Use the filter box to search for a task by its title.
-3. To edit a task, click the **Edit** button under the task. Modify the content and save your changes.
-4. To delete a task, click the **Delete** button under the task.
+1. Click on the **Create A Block** button to create a new block.
+2. Use the filter box to search for a block by its title.
+3. To edit a block, click the **Edit** button under the block. Modify the content and save your changes.
+4. To delete a block, click the **Delete** button under the block.
 
 ## Future Improvements
-- Implement user authentication for task management.
-- Add the ability to assign tasks to specific users.
-- Implement notifications or reminders for task deadlines.
+- Implement user authentication for block management.
+- Add the ability to assign blocks to specific users.
+- Implement notifications or reminders for block deadlines.
 
 ## Contact
 
@@ -81,7 +81,7 @@ For any inquiries or questions, feel free to reach out at:
 
 <!-- problem statement: 
 Frontend Problem Statement
-As a JavaScript architect, your task is to design and implement a swimlane user interface (UI)
+As a JavaScript architect, your block is to design and implement a swimlane user interface (UI)
 that facilitates the drag-and-drop functionality of blocks across different lanes representing
 various stages or states. The swimlane UI should be configurable via a master configuration,
 allowing or restricting blocks from moving to unspecified stages or states based on predefined
