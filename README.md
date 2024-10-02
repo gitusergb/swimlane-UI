@@ -1,6 +1,6 @@
 # SwimlaneUI
 
-SwimlaneUI is a project management tool that allows users to organize tasks into different swimlanes (To Do, In Progress, Done). Each task is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing tasks efficiently.
+SwimlaneUI is a project management tool that allows users to organize tasks into different swimlanes (To Do, In Progress, Done). Each task is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing tasks efficiently.It has drag-and-drop functionality to move tasks between swimlanes.
 
 - ## Live Demo
 
@@ -21,7 +21,7 @@ SwimlaneUI is a project management tool that allows users to organize tasks into
   - **To Do**: For tasks that are yet to be started.
   - **In Progress**: For tasks currently being worked on.
   - **Done**: For completed tasks.
-
+- **drag-and-drop:** It has drag-and-drop functionality to move tasks between swimlanes.
 ---
 
 
@@ -65,8 +65,6 @@ SwimlaneUI is a project management tool that allows users to organize tasks into
 4. To delete a task, click the **Delete** button under the task.
 
 ## Future Improvements
-
-- Add drag-and-drop functionality to move tasks between swimlanes.
 - Implement user authentication for task management.
 - Add the ability to assign tasks to specific users.
 - Implement notifications or reminders for task deadlines.
