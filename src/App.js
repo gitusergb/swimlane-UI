@@ -1,25 +1,81 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SwimlaneBoard from './components/SwimlaneBoard';
+import BlockPreview from './components/BlockPreview';
+import { useSelector, useDispatch } from 'react-redux';
+import { addBLOCK,editBLOCK,setFilter } from "./redux/actions";
+import "./App.css";
 
-function App() {
+
+const App = () => {
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [blockToEdit, setBlockToEdit] = useState(null);
+  const dispatch = useDispatch();
+  const blocks = useSelector((state) => state.swimlaneReducer.blocks);
+  const filter = useSelector((state) => state.swimlaneReducer.filter);
+
+
+  const filteredBlocks = blocks.filter(
+    (block) =>
+    block.title.toLowerCase().includes(filter.toLowerCase()) ||
+    block.description.toLowerCase().includes(filter.toLowerCase())
+  );
+  const openModal = () => {
+    setIsModalOpen(true);
+    setBlockToEdit(null);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleAddBlock = (block) => {
+    if (blockToEdit) {
+      dispatch(editBLOCK({ ...block, id: blockToEdit.id })); 
+    } else {
+      dispatch(addBLOCK(block));
+    }
+    closeModal();
+  };
+
+  const handleEditBlock = (block) => {
+    setBlockToEdit(block);
+    setIsModalOpen(true);
+  };
+
+  const handleFilterChange = (e) => {
+    dispatch(setFilter(e.target.value));
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className="header">
+        <h2 className="heading">SwimlaneUI</h2>
+        <div className="create-block-container">
+          <button onClick={openModal} className="create-block-btn">
+            Create A Block
+          </button>
+          <input
+            className="filter-input"
+            type="text"
+            placeholder="Filter by title"
+            value={filter}
+            onChange={handleFilterChange}
+          />
+        </div>
       </header>
+  
+      <SwimlaneBoard blocks={filteredBlocks} onEditBlock={handleEditBlock} />
+  
+      {isModalOpen && (
+        <BlockPreview
+          closeModal={closeModal}
+          addBLOCK={handleAddBlock}
+          blockToEdit={blockToEdit}
+        />
+      )}
     </div>
   );
-}
+};
 
 export default App;

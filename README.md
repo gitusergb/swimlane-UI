@@ -1,4 +1,112 @@
-# Getting Started with Create React App
+# SwimlaneUI
+
+SwimlaneUI is a Kanban-style project management tool that allows users to organize tasks into different swimlanes (To Do, In Progress, Done). Each task is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing tasks efficiently.
+
+- ## Live Demo
+
+- You can visit the live site [here](https://stirring-sorbet-16c04d.netlify.app/).
+
+
+---
+
+
+## Features
+
+- **Create New Tasks:** Add a new task to one of the swimlanes (To Do, In Progress, Done) by clicking the "Create A Block" button.
+- **Edit Tasks:** Modify task details by clicking the "Edit" button within each task card.
+- **Delete Tasks:** Remove a task by clicking the "Delete" button within each task card.
+- **Filter Tasks:** Search for tasks by title using the filter input above the swimlanes.
+- **Timestamp:** Each task shows when it was created and last updated.
+- **Swimlanes:** Tasks are visually separated into three distinct columns:
+  - **To Do**: For tasks that are yet to be started.
+  - **In Progress**: For tasks currently being worked on.
+  - **Done**: For completed tasks.
+
+---
+
+
+## Screenshots
+
+![SwimlaneUI](https://i.ibb.co/QkDFJ4W/Swimlane-UI.png)
+
+---
+
+## Installation
+
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/gitusergb/SwimlaneUI.git
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd SwimlaneUI
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Run the application:
+   ```bash
+   npm start
+   ```
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript, React.js,Redux 
+
+## How to Use
+
+1. Click on the **Create A Block** button to create a new task.
+2. Use the filter box to search for a task by its title.
+3. To edit a task, click the **Edit** button under the task. Modify the content and save your changes.
+4. To delete a task, click the **Delete** button under the task.
+
+## Future Improvements
+
+- Add drag-and-drop functionality to move tasks between swimlanes.
+- Implement user authentication for task management.
+- Add the ability to assign tasks to specific users.
+- Implement notifications or reminders for task deadlines.
+
+## Contact
+
+For any inquiries or questions, feel free to reach out at:
+
+- **Name**: Gauri Bidwai
+- **Email**: g4ur131@gmail.com
+- **GitHub**: [github.com/gitusergb](https://github.com/gitusergb)
+
+
+
+<!-- problem statement: 
+Frontend Problem Statement
+As a JavaScript architect, your task is to design and implement a swimlane user interface (UI)
+that facilitates the drag-and-drop functionality of blocks across different lanes representing
+various stages or states. The swimlane UI should be configurable via a master configuration,
+allowing or restricting blocks from moving to unspecified stages or states based on predefined
+rules.
+Additionally, upon moving a block to a new state, the UI should prompt the user to provide
+necessary data that enables the transition for the block. This data entry process should be
+seamlessly integrated into the UI workflow.
+Furthermore, the UI should support a feature where users can click on a block within the
+swimlanes to preview its details. The block preview should include a history of all previous
+transitions for the block, providing users with a comprehensive view of its journey within the
+system.
+Additionally, the UI should include a top-level filter mechanism that enables users to select and
+display blocks based on specified attributes.
+Your goal is to create an intuitive and efficient swimlane UI that enhances user experience and
+productivity while effectively managing block transitions, data interactions, and historical tracking
+within the system.
+Preferred Tech Stack:
+ReactJs + Redux
+Any UI library to enhance user experience
+Backend can be mocked -->
+
+
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +175,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
