@@ -1,6 +1,6 @@
 # SwimlaneUI
 
-SwimlaneUI is a Kanban-style project management tool that allows users to organize tasks into different swimlanes (To Do, In Progress, Done). Each task is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing tasks efficiently.
+SwimlaneUI is a project management tool that allows users to organize tasks into different swimlanes (To Do, In Progress, Done). Each task is represented as a block, which can be created, edited, and deleted. The project is built with a user-friendly interface for managing tasks efficiently.
 
 - ## Live Demo
 
